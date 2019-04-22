@@ -10,7 +10,8 @@ jedi = "*"
 
 [packages]
 selenium = "*"
-flask = "*"
+websockets = "*"
+flask-socketio = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Nutty Strings</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-2">
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label for="test-suites" class="input-group-text">Suite</label>
+            </div>
+            <select id="test-suites" class="custom-select">
+              <option value="0" selected>Choose test suite...</option>
+            </select>
+            <div class="input-group-append">
+              <button id='toggle-test-suite' class="btn btn-primary disabled">
+                Start
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2" id="test-cases-row" style="display: none;">
+        <div class="col">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="test-cases">Test</label>
+            </div>
+              <select id="test-cases" class="custom-select">
+
+              </select>
+            <div class="input-group-append">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-2" id="strings-row" style="display: none;">
+        <div class="col">
+          <table id="string-table" class="table table-hover table-reflow" style="table-layout:fixed;">
+
+         </table>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js" integrity="sha256-RtMTraB5gGlLER0FkKBcaXCmZCQCxkKS/dXm7MSEoEY=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
